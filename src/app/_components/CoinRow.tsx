@@ -11,17 +11,17 @@ const CoinRow: React.FC<Props> = ({ coin, handleRowClick }) => {
   return (
     <TableRow>
       <TableCell
-        sx={{ cursor: "pointer" }}
-        align="right"
+        sx={{ cursor: "pointer" , fontWeight: 'bold'  }}
+        align="center"
         onClick={() => handleRowClick(coin)}
       >
         {coin.symbol}
       </TableCell>
-      <TableCell align="right">{coin.buy}</TableCell>
-      <TableCell align="right">{coin.sell}</TableCell>
-      <TableCell align="right">{coin.changeRate}</TableCell>
-      <TableCell align="right">{coin.low}</TableCell>
-      <TableCell align="right">{coin.high}</TableCell>
+      <TableCell align="center">{coin.buy}&nbsp;$</TableCell>
+      <TableCell align="center">{coin.sell}&nbsp;$</TableCell>
+      <TableCell align="center">{coin.changeRate}&nbsp;$</TableCell>
+      <TableCell align="center">{coin.low}&nbsp;$</TableCell>
+      <TableCell align="center">{coin.high}&nbsp;$</TableCell>
     </TableRow>
   );
 };

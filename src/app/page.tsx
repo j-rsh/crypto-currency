@@ -19,9 +19,11 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
     backgroundColor: theme.palette.common.black,
     color: theme.palette.common.white,
+    textAlign: "center",
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
+    textAlign: "center",
   },
 }));
 
@@ -73,12 +75,12 @@ export default function Home() {
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell align="right">Symbol</StyledTableCell>
-            <StyledTableCell align="right">Buy</StyledTableCell>
-            <StyledTableCell align="right">Sell</StyledTableCell>
-            <StyledTableCell align="right">ChangeRate</StyledTableCell>
-            <StyledTableCell align="right">low</StyledTableCell>
-            <StyledTableCell align="right">high</StyledTableCell>
+            <StyledTableCell align="center">Symbol</StyledTableCell>
+            <StyledTableCell align="center">Buy</StyledTableCell>
+            <StyledTableCell align="center">Sell</StyledTableCell>
+            <StyledTableCell align="center">ChangeRate</StyledTableCell>
+            <StyledTableCell align="center">low</StyledTableCell>
+            <StyledTableCell align="center">high</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
